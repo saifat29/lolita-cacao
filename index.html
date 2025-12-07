@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Nolita Cacao | Luxury Artisanal Chocolates</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            cocoa: {
+                                50: "#fbf5f2",
+                                100: "#f5e9e3",
+                                200: "#edd5ca",
+                                300: "#e0b8a6",
+                                400: "#d0937a",
+                                500: "#c27254",
+                                600: "#b0583f",
+                                700: "#924632",
+                                800: "#7a3c2e", // Rich medium brown
+                                900: "#4A2C2A", // Deepest Cocoa
+                                950: "#281512",
+                            },
+                            gold: {
+                                400: "#D4AF37",
+                                500: "#C5A059",
+                                600: "#B08D55",
+                            },
+                            cream: "#FDF8F5",
+                        },
+                        fontFamily: {
+                            serif: ['"Cormorant Garamond"', "serif"],
+                            sans: ['"Montserrat"', "sans-serif"],
+                        },
+                        animation: {
+                            "fade-in": "fadeIn 1s ease-out forwards",
+                            "slide-up": "slideUp 0.8s ease-out forwards",
+                        },
+                        keyframes: {
+                            fadeIn: {
+                                "0%": { opacity: "0" },
+                                "100%": { opacity: "1" },
+                            },
+                            slideUp: {
+                                "0%": {
+                                    opacity: "0",
+                                    transform: "translateY(20px)",
+                                },
+                                "100%": {
+                                    opacity: "1",
+                                    transform: "translateY(0)",
+                                },
+                            },
+                        },
+                    },
+                },
+            };
+        </script>
+        <style>
+            body {
+                background-color: #fdf8f5; /* Cream background */
+                color: #4a2c2a; /* Deep Cocoa text */
+            }
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+            .scrollbar-hide {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        </style>
+        <link rel="stylesheet" href="/index.css" />
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/index.tsx"></script>
+    </body>
+</html>
